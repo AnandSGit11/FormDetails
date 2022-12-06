@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -43,6 +43,20 @@ namespace AnandPortfolio1
                 name: "Hobbies",
                 url: "{controller}/{action}",
                 defaults: new { controller = "Hobbies", action = "Hobbies" }
+            );
+
+            routes.MapRoute(
+
+                name: "Details",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Details", action = "Details" }
+            );
+
+            routes.MapRoute(
+
+                name: "Register",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Register", action = "Register" }
             );
 
         }
